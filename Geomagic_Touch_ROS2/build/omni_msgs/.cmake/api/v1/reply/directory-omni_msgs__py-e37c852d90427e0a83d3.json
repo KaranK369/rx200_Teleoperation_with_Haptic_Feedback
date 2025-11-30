@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "omni_msgs__py",
+		"source" : "/home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs/omni_msgs__py"
+	}
+}

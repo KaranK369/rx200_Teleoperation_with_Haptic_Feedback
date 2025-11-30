@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: interbotix_xs_modules
+Version: 0.0.0
+Summary: The interbotix_xs_modules package
+Author: Solomon Wiznitzer
+Author-email: trsupport@trossenrobotics.com
+Maintainer: Luke Schmitt
+Maintainer-email: trsupport@trossenrobotics.com
+License: BSD
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

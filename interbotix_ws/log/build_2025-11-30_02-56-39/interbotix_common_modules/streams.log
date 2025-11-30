@@ -1,0 +1,34 @@
+[0.839s] Invoking command in '/home/karan_k/interbotix_ws/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules': PYTHONPATH=/home/karan_k/interbotix_ws/build/interbotix_common_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/karan_k/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/interbotix_common_modules build --build-base /home/karan_k/interbotix_ws/build/interbotix_common_modules/build install --record /home/karan_k/interbotix_ws/build/interbotix_common_modules/install.log --single-version-externally-managed install_data
+[0.993s] /home/karan_k/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[0.993s]   warnings.warn(msg)
+[1.095s] running egg_info
+[1.110s] writing ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/PKG-INFO
+[1.110s] writing dependency_links to ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/dependency_links.txt
+[1.110s] writing requirements to ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/requires.txt
+[1.111s] writing top-level names to ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/top_level.txt
+[1.147s] reading manifest file '../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/SOURCES.txt'
+[1.148s] writing manifest file '../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info/SOURCES.txt'
+[1.148s] running build
+[1.148s] running build_py
+[1.149s] copying interbotix_common_modules/__init__.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules
+[1.149s] copying interbotix_common_modules/common_robot/exceptions.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/common_robot
+[1.149s] copying interbotix_common_modules/common_robot/__init__.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/common_robot
+[1.149s] copying interbotix_common_modules/common_robot/robot.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/common_robot
+[1.149s] copying interbotix_common_modules/angle_manipulation/angle_manipulation.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/angle_manipulation
+[1.150s] copying interbotix_common_modules/angle_manipulation/__init__.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/angle_manipulation
+[1.150s] copying interbotix_common_modules/launch/or_condition.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/launch
+[1.150s] copying interbotix_common_modules/launch/and_condition.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/launch
+[1.150s] copying interbotix_common_modules/launch/__init__.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/launch
+[1.150s] copying interbotix_common_modules/py_common/__init__.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/py_common
+[1.151s] copying interbotix_common_modules/py_common/params.py -> /home/karan_k/interbotix_ws/build/interbotix_common_modules/build/lib/interbotix_common_modules/py_common
+[1.151s] running install
+[1.155s] running install_lib
+[1.172s] running install_data
+[1.172s] copying resource/interbotix_common_modules -> /home/karan_k/interbotix_ws/install/interbotix_common_modules/share/ament_index/resource_index/packages
+[1.173s] copying package.xml -> /home/karan_k/interbotix_ws/install/interbotix_common_modules/share/interbotix_common_modules
+[1.173s] running install_egg_info
+[1.189s] removing '/home/karan_k/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages/interbotix_common_modules-0.0.0-py3.10.egg-info' (and everything under it)
+[1.189s] Copying ../../../../build/interbotix_common_modules/interbotix_common_modules.egg-info to /home/karan_k/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages/interbotix_common_modules-0.0.0-py3.10.egg-info
+[1.190s] running install_scripts
+[1.223s] writing list of installed files to '/home/karan_k/interbotix_ws/build/interbotix_common_modules/install.log'
+[1.242s] Invoked command in '/home/karan_k/interbotix_ws/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_common_modules' returned '0': PYTHONPATH=/home/karan_k/interbotix_ws/build/interbotix_common_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/karan_k/interbotix_ws/install/interbotix_common_modules/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/interbotix_common_modules build --build-base /home/karan_k/interbotix_ws/build/interbotix_common_modules/build install --record /home/karan_k/interbotix_ws/build/interbotix_common_modules/install.log --single-version-externally-managed install_data

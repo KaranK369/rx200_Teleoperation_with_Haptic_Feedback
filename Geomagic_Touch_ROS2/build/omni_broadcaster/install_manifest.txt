@@ -1,0 +1,17 @@
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/lib/omni_broadcaster/omni_broadcaster
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/launch/omni_frame.launch.py
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/ament_index/resource_index/package_run_dependencies/omni_broadcaster
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/ament_index/resource_index/parent_prefix_path/omni_broadcaster
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/environment/ament_prefix_path.sh
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/environment/ament_prefix_path.dsv
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/environment/path.sh
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/environment/path.dsv
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/local_setup.bash
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/local_setup.sh
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/local_setup.zsh
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/local_setup.dsv
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/package.dsv
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/ament_index/resource_index/packages/omni_broadcaster
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/cmake/omni_broadcasterConfig.cmake
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/cmake/omni_broadcasterConfig-version.cmake
+/home/karan_k/Geomagic_Touch_ROS2/install/omni_broadcaster/share/omni_broadcaster/package.xml

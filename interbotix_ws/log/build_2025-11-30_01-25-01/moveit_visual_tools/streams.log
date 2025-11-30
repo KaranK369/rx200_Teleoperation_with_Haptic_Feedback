@@ -1,0 +1,134 @@
+[0.235s] Invoking command in '/home/karan_k/interbotix_ws/build/moveit_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/opt/ros/humble /usr/bin/cmake /home/karan_k/interbotix_ws/src/moveit_visual_tools -DCMAKE_INSTALL_PREFIX=/home/karan_k/interbotix_ws/install/moveit_visual_tools
+[0.306s] -- The C compiler identification is GNU 11.4.0
+[0.383s] -- The CXX compiler identification is GNU 11.4.0
+[0.399s] -- Detecting C compiler ABI info
+[0.474s] -- Detecting C compiler ABI info - done
+[0.481s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.481s] -- Detecting C compile features
+[0.482s] -- Detecting C compile features - done
+[0.484s] -- Detecting CXX compiler ABI info
+[0.583s] -- Detecting CXX compiler ABI info - done
+[0.589s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.590s] -- Detecting CXX compile features
+[0.590s] -- Detecting CXX compile features - done
+[0.597s] -- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)
+[0.604s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.178s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.476s] [0mmoveit_visual_tools: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+[1.504s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system 
+[1.523s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.606s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.618s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.634s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.655s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.684s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.740s] -- Found graph_msgs: 0.2.0 (/opt/ros/humble/share/graph_msgs/cmake)
+[1.763s] -- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+[2.127s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.240s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.315s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.323s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.460s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.503s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.573s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.593s] -- Found Threads: TRUE  
+[2.661s] -- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.703s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.873s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.966s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.967s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.462s] -- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+[3.470s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.522s] -- Found rviz_visual_tools: 4.1.4 (/opt/ros/humble/share/rviz_visual_tools/cmake)
+[3.607s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[3.639s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[3.640s] -- Found OGRE
+[3.640s] --   static     : OFF
+[3.640s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[3.641s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[3.641s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[3.641s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[3.641s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[3.641s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[3.641s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[3.641s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[3.641s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[3.641s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[3.642s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[3.701s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[3.719s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[3.950s] -- Found X11: /usr/include   
+[3.960s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[4.141s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[4.141s] -- Looking for gethostbyname
+[4.292s] -- Looking for gethostbyname - found
+[4.292s] -- Looking for connect
+[4.453s] -- Looking for connect - found
+[4.453s] -- Looking for remove
+[4.618s] -- Looking for remove - found
+[4.619s] -- Looking for shmat
+[4.817s] -- Looking for shmat - found
+[4.817s] -- Looking for IceConnectionNumber in ICE
+[5.009s] -- Looking for IceConnectionNumber in ICE - found
+[5.214s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.254s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.256s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.261s] -- Added test 'lint_cmake' to check CMake code style
+[5.263s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.265s] -- Added test 'xmllint' to check XML markup files
+[5.272s] -- Configuring done
+[5.394s] -- Generating done
+[5.420s] -- Build files have been written to: /home/karan_k/interbotix_ws/build/moveit_visual_tools
+[5.456s] Invoked command in '/home/karan_k/interbotix_ws/build/moveit_visual_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/opt/ros/humble /usr/bin/cmake /home/karan_k/interbotix_ws/src/moveit_visual_tools -DCMAKE_INSTALL_PREFIX=/home/karan_k/interbotix_ws/install/moveit_visual_tools
+[5.459s] Invoking command in '/home/karan_k/interbotix_ws/build/moveit_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/opt/ros/humble /usr/bin/cmake --build /home/karan_k/interbotix_ws/build/moveit_visual_tools -- -j16 -l16
+[5.549s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_visual_tools.dir/src/imarker_end_effector.cpp.o[0m
+[5.549s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_visual_tools.dir/src/imarker_robot_state.cpp.o[0m
+[5.549s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_visual_tools.dir/src/moveit_visual_tools.cpp.o[0m
+[5.653s] [ 66%] [32m[1mLinking CXX shared library libmoveit_visual_tools.so[0m
+[6.152s] [ 66%] Built target moveit_visual_tools
+[6.184s] [ 83%] [32mBuilding CXX object CMakeFiles/moveit_visual_tools_demo.dir/src/moveit_visual_tools_demo.cpp.o[0m
+[6.274s] [100%] [32m[1mLinking CXX executable moveit_visual_tools_demo[0m
+[6.745s] [100%] Built target moveit_visual_tools_demo
+[6.762s] Invoked command in '/home/karan_k/interbotix_ws/build/moveit_visual_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/opt/ros/humble /usr/bin/cmake --build /home/karan_k/interbotix_ws/build/moveit_visual_tools -- -j16 -l16
+[6.764s] Invoking command in '/home/karan_k/interbotix_ws/build/moveit_visual_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/opt/ros/humble /usr/bin/cmake --install /home/karan_k/interbotix_ws/build/moveit_visual_tools
+[6.774s] -- Install configuration: "Release"
+[6.774s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/library_path.sh
+[6.774s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/library_path.dsv
+[6.775s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/lib/libmoveit_visual_tools.so
+[6.776s] -- Set runtime path of "/home/karan_k/interbotix_ws/install/moveit_visual_tools/lib/libmoveit_visual_tools.so" to ""
+[6.776s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/lib/moveit_visual_tools/moveit_visual_tools_demo
+[6.777s] -- Set runtime path of "/home/karan_k/interbotix_ws/install/moveit_visual_tools/lib/moveit_visual_tools/moveit_visual_tools_demo" to ""
+[6.777s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/include
+[6.777s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/include/moveit_visual_tools
+[6.777s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/include/moveit_visual_tools/imarker_robot_state.h
+[6.777s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/include/moveit_visual_tools/imarker_end_effector.h
+[6.778s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/include/moveit_visual_tools/moveit_visual_tools.h
+[6.778s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/launch
+[6.778s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/launch/demo.rviz
+[6.778s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/launch/demo_rviz.launch.py
+[6.778s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources
+[6.778s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/demo.png
+[6.778s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/rrbot.srdf
+[6.779s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/screenshot.png
+[6.779s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/rrbot.urdf
+[6.779s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/resources/demo_mesh.stl
+[6.779s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/ament_index/resource_index/package_run_dependencies/moveit_visual_tools
+[6.779s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/ament_index/resource_index/parent_prefix_path/moveit_visual_tools
+[6.780s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/ament_prefix_path.sh
+[6.780s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/ament_prefix_path.dsv
+[6.780s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/path.sh
+[6.780s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/environment/path.dsv
+[6.780s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/local_setup.bash
+[6.780s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/local_setup.sh
+[6.781s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/local_setup.zsh
+[6.781s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/local_setup.dsv
+[6.781s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.dsv
+[6.781s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/ament_index/resource_index/packages/moveit_visual_tools
+[6.781s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/export_moveit_visual_toolsExport.cmake
+[6.782s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/export_moveit_visual_toolsExport-release.cmake
+[6.782s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/ament_cmake_export_targets-extras.cmake
+[6.782s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.782s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/moveit_visual_toolsConfig.cmake
+[6.782s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/cmake/moveit_visual_toolsConfig-version.cmake
+[6.783s] -- Installing: /home/karan_k/interbotix_ws/install/moveit_visual_tools/share/moveit_visual_tools/package.xml
+[6.786s] Invoked command in '/home/karan_k/interbotix_ws/build/moveit_visual_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/opt/ros/humble /usr/bin/cmake --install /home/karan_k/interbotix_ws/build/moveit_visual_tools

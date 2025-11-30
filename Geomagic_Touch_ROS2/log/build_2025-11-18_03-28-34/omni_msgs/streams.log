@@ -1,0 +1,278 @@
+[0.023s] Invoking command in '/home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/home/karan_k/interbotix_ws/install/interbotix_xs_modules:/home/karan_k/interbotix_ws/install/interbotix_perception_modules:/home/karan_k/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --build /home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs -- -j16 -l16
+[0.072s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.204s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.214s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.217s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.256s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.281s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.600s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.826s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.128s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.151s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.175s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.175s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.175s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.236s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.251s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.252s] -- Added test 'lint_cmake' to check CMake code style
+[1.253s] -- Added test 'xmllint' to check XML markup files
+[1.256s] -- Configuring done
+[1.305s] -- Generating done
+[1.316s] -- Build files have been written to: /home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs
+[1.347s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.361s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.377s] [  4%] Built target ament_cmake_python_copy_omni_msgs
+[1.612s] running egg_info
+[1.630s] writing omni_msgs.egg-info/PKG-INFO
+[1.630s] writing dependency_links to omni_msgs.egg-info/dependency_links.txt
+[1.631s] writing top-level names to omni_msgs.egg-info/top_level.txt
+[1.682s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_generator_c[0m
+[1.694s] reading manifest file 'omni_msgs.egg-info/SOURCES.txt'
+[1.694s] [  4%] Built target omni_msgs__cpp
+[1.695s] writing manifest file 'omni_msgs.egg-info/SOURCES.txt'
+[1.703s] [  6%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_generator_c.dir/rosidl_generator_c/omni_msgs/msg/detail/omni_button_event__functions.c.o[0m
+[1.703s] [  8%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_generator_c.dir/rosidl_generator_c/omni_msgs/msg/detail/omni_feedback__functions.c.o[0m
+[1.704s] [ 10%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_generator_c.dir/rosidl_generator_c/omni_msgs/msg/detail/omni_state__functions.c.o[0m
+[1.708s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.708s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.709s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.731s] [ 17%] Built target ament_cmake_python_build_omni_msgs_egg
+[1.809s] [ 19%] [32m[1mLinking C shared library libomni_msgs__rosidl_generator_c.so[0m
+[1.871s] [ 19%] Built target omni_msgs__rosidl_generator_c
+[1.887s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.887s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.887s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.980s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_cpp[0m
+[2.003s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_introspection_cpp[0m
+[2.005s] [ 29%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/omni_msgs/msg/omni_feedback__type_support.cpp.o[0m
+[2.006s] [ 29%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/omni_msgs/msg/omni_state__type_support.cpp.o[0m
+[2.006s] [ 31%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/omni_msgs/msg/omni_button_event__type_support.cpp.o[0m
+[2.024s] [ 36%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/omni_msgs/msg/detail/omni_button_event__type_support.cpp.o[0m
+[2.024s] [ 36%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/omni_msgs/msg/detail/omni_feedback__type_support.cpp.o[0m
+[2.025s] [ 38%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/omni_msgs/msg/detail/omni_state__type_support.cpp.o[0m
+[2.026s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[2.052s] [ 40%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/omni_msgs/msg/detail/dds_fastrtps/omni_feedback__type_support.cpp.o[0m
+[2.053s] [ 44%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/omni_msgs/msg/detail/dds_fastrtps/omni_button_event__type_support.cpp.o[0m
+[2.053s] [ 44%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/omni_msgs/msg/detail/dds_fastrtps/omni_state__type_support.cpp.o[0m
+[2.231s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_c[0m
+[2.257s] [ 46%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/omni_msgs/msg/omni_button_event__type_support.cpp.o[0m
+[2.257s] [ 48%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/omni_msgs/msg/omni_feedback__type_support.cpp.o[0m
+[2.257s] [ 51%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/omni_msgs/msg/omni_state__type_support.cpp.o[0m
+[2.260s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_introspection_c[0m
+[2.287s] [ 53%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/omni_msgs/msg/detail/omni_button_event__type_support.c.o[0m
+[2.289s] [ 55%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/omni_msgs/msg/detail/omni_feedback__type_support.c.o[0m
+[2.289s] [ 57%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/omni_msgs/msg/detail/omni_state__type_support.c.o[0m
+[2.291s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_fastrtps_c[0m
+[2.323s] [ 59%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/omni_msgs/msg/detail/omni_button_event__type_support_c.cpp.o[0m
+[2.351s] [ 63%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/omni_msgs/msg/detail/omni_state__type_support_c.cpp.o[0m
+[2.352s] [ 63%] [32mBuilding CXX object CMakeFiles/omni_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/omni_msgs/msg/detail/omni_feedback__type_support_c.cpp.o[0m
+[2.355s] [ 65%] [32m[1mLinking CXX shared library libomni_msgs__rosidl_typesupport_c.so[0m
+[2.394s] [ 68%] [32m[1mLinking C shared library libomni_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.452s] [ 68%] Built target omni_msgs__rosidl_typesupport_c
+[2.466s] [ 68%] Built target omni_msgs__rosidl_typesupport_introspection_c
+[2.513s] [ 70%] [32m[1mLinking CXX shared library libomni_msgs__rosidl_typesupport_cpp.so[0m
+[2.579s] [ 70%] Built target omni_msgs__rosidl_typesupport_cpp
+[2.636s] [ 72%] [32m[1mLinking CXX shared library libomni_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.710s] [ 74%] [32m[1mLinking CXX shared library libomni_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.716s] [ 74%] Built target omni_msgs__rosidl_typesupport_introspection_cpp
+[2.794s] [ 74%] Built target omni_msgs__rosidl_typesupport_fastrtps_cpp
+[2.816s] [ 76%] [32m[1mLinking CXX shared library libomni_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.895s] [ 76%] Built target omni_msgs__rosidl_typesupport_fastrtps_c
+[2.921s] [ 76%] Built target omni_msgs
+[2.948s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.347s] [ 78%] Built target omni_msgs__py
+[3.364s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_generator_py[0m
+[3.383s] [ 85%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_generator_py.dir/rosidl_generator_py/omni_msgs/msg/_omni_feedback_s.c.o[0m
+[3.383s] [ 85%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_generator_py.dir/rosidl_generator_py/omni_msgs/msg/_omni_button_event_s.c.o[0m
+[3.383s] [ 85%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_generator_py.dir/rosidl_generator_py/omni_msgs/msg/_omni_state_s.c.o[0m
+[3.549s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/omni_msgs/libomni_msgs__rosidl_generator_py.so[0m
+[3.597s] [ 87%] Built target omni_msgs__rosidl_generator_py
+[3.613s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_c__pyext[0m
+[3.613s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.613s] [35m[1mConsolidate compiler generated dependencies of target omni_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[3.628s] [ 93%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/omni_msgs/_omni_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.628s] [ 93%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/omni_msgs/_omni_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.628s] [ 93%] [32mBuilding C object CMakeFiles/omni_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/omni_msgs/_omni_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.793s] [100%] [32m[1mLinking C shared library rosidl_generator_py/omni_msgs/omni_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.793s] [100%] [32m[1mLinking C shared library rosidl_generator_py/omni_msgs/omni_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.793s] [100%] [32m[1mLinking C shared library rosidl_generator_py/omni_msgs/omni_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.839s] [100%] Built target omni_msgs__rosidl_typesupport_c__pyext
+[3.840s] [100%] Built target omni_msgs__rosidl_typesupport_introspection_c__pyext
+[3.840s] [100%] Built target omni_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.857s] Invoked command in '/home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/home/karan_k/interbotix_ws/install/interbotix_xs_modules:/home/karan_k/interbotix_ws/install/interbotix_perception_modules:/home/karan_k/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --build /home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs -- -j16 -l16
+[3.858s] Invoking command in '/home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/home/karan_k/interbotix_ws/install/interbotix_xs_modules:/home/karan_k/interbotix_ws/install/interbotix_perception_modules:/home/karan_k/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --install /home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs
+[3.868s] -- Install configuration: ""
+[3.868s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/ament_index/resource_index/rosidl_interfaces/omni_msgs
+[3.869s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs
+[3.869s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg
+[3.869s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail
+[3.869s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__type_support.h
+[3.869s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__functions.c
+[3.869s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__functions.h
+[3.870s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__struct.h
+[3.870s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__functions.c
+[3.870s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__functions.c
+[3.870s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__functions.h
+[3.870s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__functions.h
+[3.870s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__struct.h
+[3.870s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__struct.h
+[3.870s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__type_support.h
+[3.871s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__type_support.h
+[3.871s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.871s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/omni_button_event.h
+[3.871s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/omni_state.h
+[3.871s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/omni_feedback.h
+[3.871s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/environment/library_path.sh
+[3.871s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/environment/library_path.dsv
+[3.872s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_generator_c.so
+[3.872s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_generator_c.so" to ""
+[3.872s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs
+[3.872s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg
+[3.872s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail
+[3.872s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__rosidl_typesupport_fastrtps_c.h
+[3.873s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__rosidl_typesupport_fastrtps_c.h
+[3.873s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__rosidl_typesupport_fastrtps_c.h
+[3.873s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.873s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_fastrtps_c.so
+[3.874s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[3.874s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs
+[3.874s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg
+[3.874s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.874s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail
+[3.874s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__type_support.c
+[3.874s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__rosidl_typesupport_introspection_c.h
+[3.874s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__type_support.c
+[3.874s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__type_support.c
+[3.874s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__rosidl_typesupport_introspection_c.h
+[3.874s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__rosidl_typesupport_introspection_c.h
+[3.875s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_introspection_c.so
+[3.875s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_introspection_c.so" to ""
+[3.876s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_c.so
+[3.876s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_c.so" to ""
+[3.876s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs
+[3.876s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg
+[3.876s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.876s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail
+[3.876s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__struct.hpp
+[3.876s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__builder.hpp
+[3.876s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__struct.hpp
+[3.877s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__type_support.hpp
+[3.877s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__builder.hpp
+[3.877s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__traits.hpp
+[3.877s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__traits.hpp
+[3.877s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__traits.hpp
+[3.877s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__type_support.hpp
+[3.877s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__struct.hpp
+[3.878s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__builder.hpp
+[3.878s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__type_support.hpp
+[3.878s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/omni_feedback.hpp
+[3.878s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/omni_button_event.hpp
+[3.878s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/omni_state.hpp
+[3.878s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs
+[3.878s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg
+[3.878s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.878s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail
+[3.878s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__rosidl_typesupport_fastrtps_cpp.hpp
+[3.878s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__rosidl_typesupport_fastrtps_cpp.hpp
+[3.879s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/dds_fastrtps
+[3.879s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__rosidl_typesupport_fastrtps_cpp.hpp
+[3.879s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.879s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.879s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs
+[3.879s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg
+[3.879s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail
+[3.879s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__type_support.cpp
+[3.879s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__type_support.cpp
+[3.880s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_feedback__rosidl_typesupport_introspection_cpp.hpp
+[3.880s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__type_support.cpp
+[3.880s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_button_event__rosidl_typesupport_introspection_cpp.hpp
+[3.880s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/include/omni_msgs/omni_msgs/msg/detail/omni_state__rosidl_typesupport_introspection_cpp.hpp
+[3.880s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_introspection_cpp.so
+[3.881s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[3.881s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_cpp.so
+[3.881s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_typesupport_cpp.so" to ""
+[3.881s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/environment/pythonpath.sh
+[3.881s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/environment/pythonpath.dsv
+[3.881s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs-0.0.0-py3.10.egg-info
+[3.881s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.881s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.882s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[3.882s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.882s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs
+[3.882s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.882s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg
+[3.882s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_feedback.py
+[3.882s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_state.py
+[3.883s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/__init__.py
+[3.883s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_feedback_s.c
+[3.883s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_state_s.c
+[3.883s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_button_event_s.c
+[3.883s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_button_event.py
+[3.883s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.883s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/_omni_msgs_s.ep.rosidl_typesupport_c.c
+[3.884s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/libomni_msgs__rosidl_generator_py.so
+[3.884s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/__init__.py
+[3.884s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/_omni_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.884s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/_omni_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.884s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.921s] Listing '/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs'...
+[3.921s] Compiling '/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/__init__.py'...
+[3.921s] Listing '/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg'...
+[3.921s] Compiling '/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/__init__.py'...
+[3.921s] Compiling '/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_button_event.py'...
+[3.921s] Compiling '/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_feedback.py'...
+[3.921s] Compiling '/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/msg/_omni_state.py'...
+[3.924s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.925s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.925s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.925s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.925s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.925s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/local/lib/python3.10/dist-packages/omni_msgs/omni_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.926s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_generator_py.so
+[3.926s] -- Set runtime path of "/home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/lib/libomni_msgs__rosidl_generator_py.so" to ""
+[3.926s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/msg/OmniButtonEvent.idl
+[3.926s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/msg/OmniFeedback.idl
+[3.927s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/msg/OmniState.idl
+[3.927s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/msg/OmniButtonEvent.msg
+[3.927s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/msg/OmniFeedback.msg
+[3.927s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/msg/OmniState.msg
+[3.927s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/ament_index/resource_index/package_run_dependencies/omni_msgs
+[3.927s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/ament_index/resource_index/parent_prefix_path/omni_msgs
+[3.927s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/environment/ament_prefix_path.sh
+[3.927s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/environment/ament_prefix_path.dsv
+[3.927s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/environment/path.sh
+[3.927s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/environment/path.dsv
+[3.928s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/local_setup.bash
+[3.928s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/local_setup.sh
+[3.928s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/local_setup.zsh
+[3.928s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/local_setup.dsv
+[3.928s] -- Installing: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/package.dsv
+[3.928s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/ament_index/resource_index/packages/omni_msgs
+[3.928s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_generator_cExport.cmake
+[3.928s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.929s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.929s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.929s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.929s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.929s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgs__rosidl_typesupport_cExport.cmake
+[3.929s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.929s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_generator_cppExport.cmake
+[3.929s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgs__rosidl_typesupport_cppExport.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_generator_pyExport.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/export_omni_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/rosidl_cmake-extras.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.930s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.931s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.931s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.931s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgsConfig.cmake
+[3.931s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/cmake/omni_msgsConfig-version.cmake
+[3.931s] -- Up-to-date: /home/karan_k/Geomagic_Touch_ROS2/install/omni_msgs/share/omni_msgs/package.xml
+[3.933s] Invoked command in '/home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/karan_k/ardu_ws/install/ardupilot_dds_tests:/home/karan_k/interbotix_ws/install/interbotix_xs_modules:/home/karan_k/interbotix_ws/install/interbotix_perception_modules:/home/karan_k/interbotix_ws/install/interbotix_common_modules:/opt/ros/humble /usr/bin/cmake --install /home/karan_k/Geomagic_Touch_ROS2/build/omni_msgs
