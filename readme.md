@@ -36,7 +36,7 @@ zenohd --version
 zenoh-bridge-ros2dds --version
 ```
 
-# setup zenoh
+## setup zenoh
 
 To test Zenoh with ROS 2, run:
 
@@ -67,7 +67,7 @@ zenoh-bridge-ros2dds --connect tcp/<router-ip>:7447
 ifconfig
 ```
 
-# Uses
+## Uses
 
 Build and source the scr files of interbotix_ws and Geomagic_Touch_ROS2 individually 
 
@@ -76,13 +76,13 @@ colcon build
 source install/setup.bash
 ```
 
-# Simulation
-'''bash
+## Simulation
+```bash
 ros2 launch interbotix_xsarm_sim xsarm_gz_classic.launch.py robot_model:=rx200
 ros2 launch omni_common omni.launch.py 
-'''
+```
 nevigate to interbotix_ws/src/controller and run
-'''bash
+```bash
 python3 arm_control_sim.py
 python3 effort_controller.py
 ```
@@ -91,12 +91,13 @@ nevigate to geomagic_touch_ros2/src/omni_common/src and run
 python3 ff.py
 ```
 
-# Real arm
-'''bash
+## Real arm
+```bash
 ros2 launch interbotix_xsarm_control xsarm_control.launch.py robot_model:=rx200 
 ros2 launch omni_common omni.launch.py 
-'''
+```
 nevigate to geomagic_touch_ros2/src/omni_common/src and run
+
 ```bash
 python3 ff.py
 ```
