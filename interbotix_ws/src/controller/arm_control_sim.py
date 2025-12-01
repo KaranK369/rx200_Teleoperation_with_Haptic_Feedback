@@ -117,9 +117,6 @@ class ModernRoboticsIKController(Node):
         self.white_button_pressed = False
         self.grey_button_pressed = False
         
-        # Store x1 for continuity
-        self.x1 = 0.25
-        
         # Current gripper state
         self.gripper_closed = False
         
@@ -145,8 +142,6 @@ class ModernRoboticsIKController(Node):
             self.phantom_joint_callback,
             10
         )
-
-
         
         # Open gripper on startup
         self.create_timer(1.0, self.open_gripper_on_startup)
@@ -164,7 +159,6 @@ class ModernRoboticsIKController(Node):
         if len(positions) == self.num_joints:
             self.current_joint_positions = positions
             self.joint_commands = list(positions)
-
 
     def open_gripper_on_startup(self):
         """Open gripper once on startup"""
@@ -354,61 +348,29 @@ class ModernRoboticsIKController(Node):
         debug_msg += f"roll={roll_mapped:.3f}, pitch={pitch_remapped:.3f}\n"
         debug_msg += f"Buttons: white={self.white_button_pressed}, grey={self.grey_button_pressed}"
 
-        if not self.white_button_pressed and not self.grey_button_pressed:
-            # Free movement mode
-            self.x1 = x_safe
-            joint_positions, success = self.set_ee_pose_components(
-                x=x_safe, 
-                y=y_safe, 
-                z=z_safe, 
-                roll=0.0, 
-                pitch=pitch_remapped
-            )
-            if success:
-                self.get_logger().info(debug_msg)
-                self.get_logger().info(f"IK Success - Joints: {[f'{j:.3f}' for j in joint_positions]}")
-                self.send_joint_trajectory(joint_positions)
-            else:
-                self.get_logger().warn(f"No valid pose could be found. x={x_safe:.3f}, y={y_safe:.3f}, z={z_safe:.3f}")
-            
-        elif not self.white_button_pressed and self.grey_button_pressed:
- 
-            joint_positions, success = self.set_ee_pose_components(
-                x=x_safe,
-                y=y_safe,
-                z=z_safe,
-                roll=0.0,
-                pitch=pitch_remapped
-            )
-            if success:
-                self.send_joint_trajectory(joint_positions)
-            self.leader_valid_pub.publish(Bool(data=success))
-            
-        elif self.white_button_pressed and self.grey_button_pressed:
-            # Both buttons pressed
-            self.x1 = x_safe
-            joint_positions, success = self.set_ee_pose_components(
-                x=self.x1,
-                y=y_safe,
-                z=z_safe,
-                roll=roll_mapped,
-                pitch=pitch_remapped
-            )
-            if success:
-                self.send_joint_trajectory(joint_positions)
-            
-        elif self.white_button_pressed and not self.grey_button_pressed:
-            # White button only
-            self.x1 = x_safe
-            joint_positions, success = self.set_ee_pose_components(
-                x=self.x1,
-                y=y_safe,
-                z=z_safe,
-                roll=roll_mapped,
-                pitch=pitch_remapped
-            )
-            if success:
-                self.send_joint_trajectory(joint_positions)
+        # Determine roll based on button states
+        if self.white_button_pressed:
+            # White button: use roll from Geomagic
+            use_roll = roll_mapped
+        else:
+            # No white button or grey only: roll = 0
+            use_roll = 0.0
+
+        # Solve IK and send command
+        joint_positions, success = self.set_ee_pose_components(
+            x=x_safe, 
+            y=y_safe, 
+            z=z_safe, 
+            roll=use_roll, 
+            pitch=pitch_remapped
+        )
+        
+        if success:
+            self.get_logger().info(debug_msg)
+            self.get_logger().info(f"IK Success - Joints: {[f'{j:.3f}' for j in joint_positions]}")
+            self.send_joint_trajectory(joint_positions)
+        else:
+            self.get_logger().warn(f"No valid pose could be found. x={x_safe:.3f}, y={y_safe:.3f}, z={z_safe:.3f}")
 
     def phantom_joint_callback(self, msg: JointState):
         """Handle joint state updates from Geomagic Touch"""
@@ -437,19 +399,10 @@ def main(args=None):
 
     node = ModernRoboticsIKController()
     
-    print("\n" + "="*50)
-    print("Modern Robotics IK Teleoperation")
-    print("="*50)
-    print("Features:")
-    print("  ✓ Uses Interbotix Modern Robotics IK")
-    print("  ✓ Exact same algorithm as SDK")
-    print("  ✓ Direct trajectory control")
-    print("  ✓ Full workspace (0.05-0.50m X-axis)")
-    print("="*50)
     print("\nControls:")
-    print("  Grey Button: Close gripper")
-    print("  No Buttons: Free movement")
-    print("  White + Grey: Constrained X-axis")
+    print("  No buttons: Free movement (roll=0)")
+    print("  Grey button: Close gripper + free movement (roll=0)")
+    print("  White button: Free movement with roll from Geomagic")
     print("="*50 + "\n")
     
     print("Waiting for joint states...")

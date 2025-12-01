@@ -27,21 +27,21 @@ class ForceFeedbackMapper(Node):
         # Higher = less sensitive (only heavy contacts)
         self.contact_thresholds = {
             'waist': {
-                'margin': 80.0,      # Nm outside range to trigger contact
-                'sustain_margin': 50.0,  # Nm to sustain contact (lower = easier to maintain)
+                'margin': 30.0,      # Nm outside range to trigger contact
+                'sustain_margin': 30.0,  # Nm to sustain contact (lower = easier to maintain)
             },
             'shoulder': {
                 'margin': 100.0,     # Shoulder carries more weight, less sensitive
                 'sustain_margin': 60.0,
             },
             'elbow': {
-                'margin': 120.0,     # Elbow has most leverage, least sensitive
+                'margin': 100.0,     # Elbow has most leverage, least sensitive
                 'sustain_margin': 70.0,
             }
         }
         
         # FORCE GENERATION
-        self.effort_to_force_scale = 0.04  # Scaling factor: effort → force
+        self.effort_to_force_scale = 0.1  # Scaling factor: effort → force
         self.max_force = 2.0                 # Maximum force output (N)
         self.min_force_threshold = 0.01     # Minimum force to send (filter noise)
         
@@ -110,13 +110,13 @@ class ForceFeedbackMapper(Node):
         self.monitor_timer = self.create_timer(0.1, self.monitor_callback)
         
         self.get_logger().info("=" * 80)
-        self.get_logger().info("🔧 ADVANCED FORCE FEEDBACK - Calibration-Based Detection")
+        self.get_logger().info("ADVANCED FORCE FEEDBACK - Calibration-Based Detection")
         self.get_logger().info("=" * 80)
         self.get_logger().info(f"📊 Calibration: {self.calibration_samples} samples "
                              f"({self.calibration_samples/10:.1f} seconds)")
         self.get_logger().info("⚠️  IMPORTANT: Move arm through FULL range during calibration!")
         self.get_logger().info("=" * 80)
-        self.get_logger().info("🎛️  TUNING PARAMETERS:")
+        self.get_logger().info("TUNING PARAMETERS:")
         self.get_logger().info(f"   Waist margin: {self.contact_thresholds['waist']['margin']:.1f} Nm")
         self.get_logger().info(f"   Shoulder margin: {self.contact_thresholds['shoulder']['margin']:.1f} Nm")
         self.get_logger().info(f"   Elbow margin: {self.contact_thresholds['elbow']['margin']:.1f} Nm")
@@ -255,7 +255,7 @@ class ForceFeedbackMapper(Node):
                         deviation = max(below_range, above_range)
                         
                         self.get_logger().warn(
-                            f"💥 CONTACT ({direction}): {joint_name} | "
+                            f"CONTACT ({direction}): {joint_name} | "
                             f"Effort:{smoothed_effort:.1f} Nm | "
                             f"Range:[{self.effort_min[i]:.1f}, {self.effort_max[i]:.1f}] | "
                             f"Deviation:{deviation:.1f} Nm (threshold:{margin:.1f})"
@@ -292,7 +292,7 @@ class ForceFeedbackMapper(Node):
         
         if contact_detected:
             self.get_logger().info(
-                f"🔴 ACTIVE: {contact_joints} | "
+                f"ACTIVE: {contact_joints} | "
                 f"Torques:[{torque[0]:.1f},{torque[1]:.1f},{torque[2]:.1f}] Nm"
             )
         
@@ -371,7 +371,7 @@ class ForceFeedbackMapper(Node):
                         margin = self.contact_thresholds[joint_names[i]]['margin']
                         
                         self.get_logger().info(
-                            f"📊 {joint_names[i].upper()}: "
+                            f"{joint_names[i].upper()}: "
                             f"Range=[{self.effort_min[i]:7.1f}, {self.effort_max[i]:7.1f}] Nm "
                             f"(span:{range_size:6.1f}) | "
                             f"Mean:{self.effort_mean[i]:7.1f} ±{self.effort_std[i]:5.1f} | "
@@ -380,8 +380,8 @@ class ForceFeedbackMapper(Node):
                     
                     self.calibrated = True
                     self.get_logger().info("=" * 80)
-                    self.get_logger().info("🎮 HAPTIC FEEDBACK ACTIVE")
-                    self.get_logger().info("💡 Touch arm to test force feedback")
+                    self.get_logger().info("HAPTIC FEEDBACK ACTIVE")
+                    self.get_logger().info("Touch arm to test force feedback")
                     self.get_logger().info("=" * 80)
                 
                 return
@@ -402,7 +402,7 @@ class ForceFeedbackMapper(Node):
                 
                 if force_mag > self.min_force_threshold:
                     self.get_logger().info(
-                        f"⚡ HAPTIC: [{force_limited[0]:.3f},{force_limited[1]:.3f},"
+                        f"HAPTIC: [{force_limited[0]:.3f},{force_limited[1]:.3f},"
                         f"{force_limited[2]:.3f}]N | Mag:{force_mag:.3f}N"
                         f"{' (LIMITED)' if was_limited else ''}"
                     )
@@ -411,9 +411,9 @@ class ForceFeedbackMapper(Node):
                 self.force_history.clear()
             
             # Publish to Geomagic
-            feedback.force.x = float(self.current_force[0])
-            feedback.force.y = float(self.current_force[1])
-            feedback.force.z = float(self.current_force[2])
+            feedback.force.x = -float(self.current_force[0])
+            feedback.force.y = -float(self.current_force[1])
+            feedback.force.z = -float(self.current_force[2])
             feedback.position.x = 0.0
             feedback.position.y = 0.0
             feedback.position.z = 0.0

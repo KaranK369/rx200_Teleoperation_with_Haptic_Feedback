@@ -10,7 +10,6 @@ from interbotix_xs_modules.xs_robot.arm import InterbotixManipulatorXS
 from math import atan2, asin, degrees
 from omni_msgs.msg import OmniButtonEvent
 from sensor_msgs.msg import JointState
-from std_msgs.msg import Bool
 
 
 roll_mapped = 0.0
@@ -26,7 +25,7 @@ T = np.array([
 # RX200 workspace limits for safety
 WORKSPACE_LIMITS = {
     'x_min': 0.05,
-    'x_max': 0.50,   # Increased from 0.25
+    'x_max': 0.50,
     'y_min': -0.40,
     'y_max': 0.40,
     'z_min': 0.02,
@@ -47,7 +46,7 @@ def clamp_to_workspace(x, y, z):
 
 class PhantomPoseToInterbotix(Node):
     def __init__(self, bot):
-        super().__init__('phantom_to_interbotix_node')
+        super().__init__('arm_control')
         self.bot = bot
         self.bot.gripper.release()
         self.last_pose_time = self.get_clock().now()
@@ -55,9 +54,6 @@ class PhantomPoseToInterbotix(Node):
         
         self.white_button_pressed = False
         self.grey_button_pressed = False
-        
-        # Store x1 for continuity
-        self.x1 = 0.25
 
         self.subscription = self.create_subscription(
             PoseStamped,
@@ -81,20 +77,12 @@ class PhantomPoseToInterbotix(Node):
             10
         )
 
-       # self.leader_valid_pub = self.create_publisher(Bool, '/pose_valid_leader', 10)
-       # self.mimic_valid = True
-       # self.create_subscription(Bool, '/pose_valid_mimic', self.mimic_valid_cb, 10)
-        
-      #  self.get_logger().info("Enhanced workspace - limits removed, safety clamping active")
-
-    #def mimic_valid_cb(self, msg: Bool):
-    #    self.mimic_valid = msg.data
-
     def button_callback(self, msg: OmniButtonEvent):
         grey = msg.grey_button
         white = msg.white_button
 
-        if grey == 1 and white == 0:
+        # Gripper control - close on grey press, open on grey release
+        if grey == 1:
             self.bot.gripper.grasp(delay=0.0)
             self.get_logger().info("Gripper closed.")
         else:
@@ -106,7 +94,7 @@ class PhantomPoseToInterbotix(Node):
 
     def pose_callback(self, msg: PoseStamped):
         now = self.get_clock().now()
-        if (now - self.last_pose_time).nanoseconds < 20_000_000:  # 50 Hz = 0.02 sec
+        if (now - self.last_pose_time).nanoseconds < 20_000_000:  # 50 Hz
             return
         self.last_pose_time = now
 
@@ -114,89 +102,52 @@ class PhantomPoseToInterbotix(Node):
         p_geomagic = [pos.x, pos.y, pos.z]
         p_inter = transform_point(p_geomagic)
         
-        # Keep your original scaling (x2) that was working
+        # Keep original scaling (x2)
         x_raw = p_inter[0] * 2
         y_raw = p_inter[1] * 2
         z_raw = p_inter[2]
         
-        # Apply safety clamping instead of hard limits
+        # Apply safety clamping
         x_safe, y_safe, z_safe = clamp_to_workspace(x_raw, y_raw, z_raw)
 
-        if not self.white_button_pressed and not self.grey_button_pressed:
-            # Free movement mode
-            self.x1 = x_safe  # Update x1 for continuity
-            
-            self.bot.arm.set_ee_pose_components(
-                x=x_safe,
-                y=y_safe,
-                z=z_safe,
-                roll=0.0,
-                pitch=pitch_remapped,
-                moving_time=0.3,
-                accel_time=0.6,
-                blocking=False
-            )
-            
-      #  elif not self.white_button_pressed and self.grey_button_pressed:
-      #      # Coordinated movement mode
-      #      if not self.mimic_valid:
-      #          return
+        # Determine roll based on button state
+        if self.white_button_pressed:
+            # White button: use roll from Geomagic
+            use_roll = roll_mapped
+        else:
+            # No white button (no buttons or grey only): roll = 0
+            use_roll = 0.0
 
- #           _, success = self.bot.arm.set_ee_pose_components(
-  #              x=x_safe,
-   #             y=y_safe,
-    #            z=z_safe,
-     #           roll=roll_mapped,
-      #          pitch=pitch_remapped,
-       #         blocking=False
-        #    )
-         #   self.leader_valid_pub.publish(Bool(data=success))
-            
-       # elif self.white_button_pressed and self.grey_button_pressed:
-            # Both buttons pressed
-        #    self.x1 = x_safe  # Update x1
-            
-         #   self.bot.arm.set_ee_pose_components(
-          #      x=self.x1,
-          #      y=y_safe,
-          #      z=z_safe,
-          #      roll=roll_mapped,
-          #      pitch=pitch_remapped,
-          #      blocking=False
-           # )
-            
-        elif self.white_button_pressed and not self.grey_button_pressed:
-            # White button only
-            self.x1 = x_safe  # Update x1
-            
-            self.bot.arm.set_ee_pose_components(
-                x=self.x1,
-                y=y_safe,
-                z=z_safe,
-                roll=roll_mapped,
-                pitch=pitch_remapped,
-                blocking=False
-            )
+        # Move arm with appropriate roll
+        self.bot.arm.set_ee_pose_components(
+            x=x_safe,
+            y=y_safe,
+            z=z_safe,
+            roll=use_roll,
+            pitch=pitch_remapped,
+            moving_time=0.3,
+            accel_time=0.6,
+            blocking=False
+        )
 
     def joint_callback(self, msg: JointState):
         now = self.get_clock().now()
-        if (now - self.last_joint_time).nanoseconds < 20_000_000:  # 50 Hz = 0.02 sec
+        if (now - self.last_joint_time).nanoseconds < 20_000_000:  # 50 Hz
             return
         self.last_joint_time = now
         
-        if not (not self.white_button_pressed and self.grey_button_pressed):
-            name_to_pos = dict(zip(msg.name, msg.position))
+        name_to_pos = dict(zip(msg.name, msg.position))
 
-            roll = name_to_pos.get('roll', 0.0)
-            pitch = name_to_pos.get('pitch', 0.0)
+        roll = name_to_pos.get('roll', 0.0)
+        pitch = name_to_pos.get('pitch', 0.0)
 
-            roll += 2.61
-            global roll_mapped
-            roll_mapped = roll
-            
-            pitch += 2.60
-            global pitch_remapped
-            pitch_remapped = pitch
+        roll += 2.61
+        global roll_mapped
+        roll_mapped = roll
+        
+        pitch += 2.60
+        global pitch_remapped
+        pitch_remapped = pitch
 
 
 def main(args=None):
@@ -214,13 +165,12 @@ def main(args=None):
     node = PhantomPoseToInterbotix(bot)
     
     print("\n" + "="*50)
-    print("Teleoperation with Extended Workspace")
+    print("Geomagic Touch to RX200 Teleoperation")
     print("="*50)
-    print("Changes:")
-    print("  ✓ Removed 0.25m X-axis limit")
-    print("  ✓ Extended to full robot workspace")
-    print("  ✓ Kept original scaling (2x) for sync")
-    print("  ✓ Added safety clamping at boundaries")
+    print("\nControls:")
+    print("  No buttons: Free movement (roll=0)")
+    print("  Grey button: Close gripper + free movement (roll=0)")
+    print("  White button: Free movement with roll from Geomagic")
     print("="*50 + "\n")
     
     try:
