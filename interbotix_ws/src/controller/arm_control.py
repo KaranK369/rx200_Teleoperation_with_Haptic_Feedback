@@ -81,14 +81,14 @@ class PhantomPoseToInterbotix(Node):
             10
         )
 
-        self.leader_valid_pub = self.create_publisher(Bool, '/pose_valid_leader', 10)
-        self.mimic_valid = True
-        self.create_subscription(Bool, '/pose_valid_mimic', self.mimic_valid_cb, 10)
+       # self.leader_valid_pub = self.create_publisher(Bool, '/pose_valid_leader', 10)
+       # self.mimic_valid = True
+       # self.create_subscription(Bool, '/pose_valid_mimic', self.mimic_valid_cb, 10)
         
-        self.get_logger().info("Enhanced workspace - limits removed, safety clamping active")
+      #  self.get_logger().info("Enhanced workspace - limits removed, safety clamping active")
 
-    def mimic_valid_cb(self, msg: Bool):
-        self.mimic_valid = msg.data
+    #def mimic_valid_cb(self, msg: Bool):
+    #    self.mimic_valid = msg.data
 
     def button_callback(self, msg: OmniButtonEvent):
         grey = msg.grey_button
@@ -137,33 +137,33 @@ class PhantomPoseToInterbotix(Node):
                 blocking=False
             )
             
-        elif not self.white_button_pressed and self.grey_button_pressed:
-            # Coordinated movement mode
-            if not self.mimic_valid:
-                return
+      #  elif not self.white_button_pressed and self.grey_button_pressed:
+      #      # Coordinated movement mode
+      #      if not self.mimic_valid:
+      #          return
 
-            _, success = self.bot.arm.set_ee_pose_components(
-                x=x_safe,
-                y=y_safe,
-                z=z_safe,
-                roll=roll_mapped,
-                pitch=pitch_remapped,
-                blocking=False
-            )
-            self.leader_valid_pub.publish(Bool(data=success))
+ #           _, success = self.bot.arm.set_ee_pose_components(
+  #              x=x_safe,
+   #             y=y_safe,
+    #            z=z_safe,
+     #           roll=roll_mapped,
+      #          pitch=pitch_remapped,
+       #         blocking=False
+        #    )
+         #   self.leader_valid_pub.publish(Bool(data=success))
             
-        elif self.white_button_pressed and self.grey_button_pressed:
+       # elif self.white_button_pressed and self.grey_button_pressed:
             # Both buttons pressed
-            self.x1 = x_safe  # Update x1
+        #    self.x1 = x_safe  # Update x1
             
-            self.bot.arm.set_ee_pose_components(
-                x=self.x1,
-                y=y_safe,
-                z=z_safe,
-                roll=roll_mapped,
-                pitch=pitch_remapped,
-                blocking=False
-            )
+         #   self.bot.arm.set_ee_pose_components(
+          #      x=self.x1,
+          #      y=y_safe,
+          #      z=z_safe,
+          #      roll=roll_mapped,
+          #      pitch=pitch_remapped,
+          #      blocking=False
+           # )
             
         elif self.white_button_pressed and not self.grey_button_pressed:
             # White button only

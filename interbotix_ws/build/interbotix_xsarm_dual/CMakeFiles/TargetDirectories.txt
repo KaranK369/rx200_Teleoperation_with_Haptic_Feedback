@@ -1,9 +1,0 @@
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/uninstall.dir
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/interbotix_xsarm_dual_uninstall.dir
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/test.dir
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/edit_cache.dir
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/rebuild_cache.dir
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/list_install_components.dir
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/install.dir
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/install/local.dir
-/home/karan_k/interbotix_ws/build/interbotix_xsarm_dual/CMakeFiles/install/strip.dir
